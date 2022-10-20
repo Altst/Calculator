@@ -17,11 +17,11 @@ public class calculatorProject {
             case 3: roadTypeNum = 0.25;
                 break;
             case 4: roadTypeNum = 0.25;
-                break;
         }
+        stopping_distance(speed, roadTypeNum);
     }
-    public void stopping_distance(double speed){
-        double distance = speed;
+    public void stopping_distance(double speed, double roadTypeNum){
+        double distance = (speed*2)/(254*roadTypeNum);
         System.out.println("Тормозной путь: " + distance);
     }
 }
